@@ -8,13 +8,17 @@
 app:
   # Nome do seu sistema: aparece no menu e no título das páginas.
   # TROQUE para o nome do seu projeto (ex.: "Estoque Fácil", "OS Técnica").
-  nome: "Meu Sistema"
+  nome: "Agenda Fácil"
   seguranca:
-    # Segurança (login). Fica desligada até o Encontro 7.
-    ativa: false
+    # Segurança (login): ligada a partir do Encontro 7.
+    ativa: true
 
 server:
   port: 8080
+  # Codespaces: o sistema é acessado por um endereço público (...app.github.dev).
+  # Esta linha faz os redirecionamentos (login, logout, salvar) usarem esse endereço
+  # em vez de "localhost".
+  forward-headers-strategy: framework
 
 spring:
   application:

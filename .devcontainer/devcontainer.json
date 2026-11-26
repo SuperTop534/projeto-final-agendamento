@@ -3,6 +3,7 @@
   // Ao criar um Codespace, o GitHub monta automaticamente um computador na nuvem
   // com Java 21, Maven e Docker, além das extensões do VS Code listadas abaixo.
   "name": "Projeto Final - SENAI",
+  // A imagem é montada a partir do arquivo Dockerfile desta pasta (Java 21 + correção do apt).
   "build": { "dockerfile": "Dockerfile" },
 
   "features": {
